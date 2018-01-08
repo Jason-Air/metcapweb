@@ -1,0 +1,10 @@
+#map {
+    width: 1366px;
+    height: 600px;
+    border: solid 1px #999999;
+}
+
+.divIconContourValue{
+    font-size: 16px;
+    text-shadow: 1px 1px #f0f0f0;
+  }

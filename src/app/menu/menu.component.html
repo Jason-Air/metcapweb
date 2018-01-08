@@ -1,0 +1,111 @@
+
+<a id="nav-toggle" (click)="menuOpen()"  [ngClass]="status ? 'active':''"><span></span></a>
+<nav class="nav col-lg-2 col-sm-12" role="navigation" >
+  <div class="nav__list">
+    <div>
+      <input id="group-1" type="checkbox" hidden />
+      <label for="group-1"><span class="fa fa-angle-right"></span>Yer</label>
+      <div class="group-list">
+        <div><a href="#" (click)="!menuElmStatus[0]?addContourLayer(0):removeContourLayer(0)" [ngClass]="menuElmStatus[0] ? 'added':''">İzobar</a></div>
+        <div><a href="#" (click)="!menuElmStatus[2]?addTemperatureLayer(2):removeTemperatureLayer(2)" [ngClass]="menuElmStatus[2] ? 'added':''">Sıcaklık</a></div>
+        <div><a href="#">Tandans</a></div>
+        <div><a href="#">Azami Sıcaklık</a></div>
+        <div><a href="#">Asgari Sıcaklık</a></div>
+        <div><a href="#">24 Saatlik Yağış</a></div>
+        <div><a href="#">Şimşek</a></div>
+        <div><a href="#">Bulut</a></div>
+        <div><a href="#">Sıcaklık Farkı</a></div>
+        <div><a href="#">Basınç Farkı</a></div>
+        <div><a href="#">Hava Durumu</a></div>
+        <div><a href="#">6 Saatlik Yağış</a></div>
+        <div><a href="#">12 Saatlik Yağış</a></div>
+      </div>
+    </div>
+    <div>
+    <input id="group-2" type="checkbox" hidden />
+    <label for="group-2"><span class="fa fa-angle-right"></span>Yüksek</label>
+    <div class="group-list">
+      <div>
+      <div><a href="#"  (click)="!menuElmStatus[1]?addContourLayer(1):removeContourLayer(1)" [ngClass]="menuElmStatus[1] ? 'added':''">850 hPa</a></div>
+      <div><a href="#">700 hPa</a></div>
+      <div><a href="#">500 hPa</a></div>
+      <div><a href="#">300 hPa</a></div>
+      <div><a href="#">100 hPa</a></div>
+      <div><a href="#">Tropopoz</a></div>
+      <div><a href="#">Azami Rüzgar</a></div>
+      <div><a href="#">Yağabilir Su</a></div>
+      <div><a href="#">1000/500 hPa Kalınlık</a></div>
+      <div><a href="#">Islak Hazne</a></div>
+      <div><a href="#">K Index</a></div>
+      <div><a href="#">Vertical Total Index</a></div>
+      <div><a href="#">Cross Total Index</a></div>
+      <div><a href="#">Total Total Index</a></div>
+      <div><a href="#">S Index</a></div>
+      <div><a href="#">Sweat Index</a></div>
+      <div><a href="#">Miller Index</a></div>
+      <div><a href="#">Boyden Index</a></div>
+      <div><a href="#">KO Index</a></div>
+      <div><a href="#">Lifted Index</a></div>
+      <div><a href="#">EUMETSAT KI</a></div>
+      <div><a href="#">EUMETSAT KO</a></div>
+      <div><a href="#">EUMETSAT PLIF</a></div>
+      <div><a href="#">EUMETSAT MB</a></div>
+      <div><a href="#">EUMETSAT PW</a></div>
+      </div>
+    </div>
+    </div>
+    <div>
+    <input id="group-3" type="checkbox" hidden />
+    <label for="group-3"><span class="fa fa-angle-right"></span>Radar</label>
+    <div class="group-list">
+      <div>
+        <div><a href="#">PPI</a></div>
+        <div><a href="#">MAX</a></div>
+        <div><a href="#"><hr></a></div>
+      <div><a href="#">Afyonkarahisar</a></div>
+      <div><a href="#">Ankara</a></div>
+      <div><a href="#">Antalya</a></div>
+      <div><a href="#">Adana/Hatay</a></div>
+      <div><a href="#">Balıkesir</a></div>
+      <div><a href="#">Bursa</a></div>
+      <div><a href="#">Erzurum</a></div>
+      <div><a href="#">Gaziantep</a></div>
+      <div><a href="#">İstanbul (C)</a></div>
+      <div><a href="#">İstanbul (X)</a></div>
+      <div><a href="#">İzmir</a></div>
+      <div><a href="#">Karaman</a></div>
+      <div><a href="#">Muğla</a></div>
+      <div><a href="#">Samsun</a></div>
+      <div><a href="#">Sivas</a></div>
+      <div><a href="#">Şanlıurfa</a></div>
+      <div><a href="#">Trabzon</a></div>
+      <div><a href="#">Zonguldak</a></div>
+      </div>
+    </div>
+    </div>
+    <div>
+    <input id="group-4" type="checkbox" hidden />
+    <label for="group-4"><span class="fa fa-angle-right"></span>Uydu</label>
+    <div class="group-list">
+      <div>
+        <div><a href="#">Toz Kum</a></div>
+        <div><a href="#">Doğal Görünüm</a></div>
+        <div><a href="#">Anlık Yağış</a></div>
+        <div><a href="#">Hava Kütlesi</a></div>
+        <div><a href="#">Avrupa Renkli</a></div>
+        <div><a href="#">Avrupa Balkanlar</a></div>
+        <div><a href="#">Avrupa IR</a></div>
+        <div><a href="#">Türkiye IR</a></div>
+        <div><a href="#">Avrupa Görünür</a></div>
+        <div><a href="#">Türkiye Görünür</a></div>
+        <div><a href="#">Avrupa SU Buharı</a></div>
+        <div><a href="#">Türkiye Su Buharı</a></div>
+        <div><a href="#">Infrared 10.8</a></div>
+        <div><a href="#">Görünür</a></div>
+        <div><a href="#">Su Buharı</a></div>
+        <div><a href="#">Bulut Tepe Sıcaklığı</a></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</nav>
